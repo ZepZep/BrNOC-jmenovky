@@ -11,3 +11,6 @@
 4. uprvit 31. řádek souboru `jmenovky.tex`
 5. `pdflatex jmenovky.tex`
   * výstup jmenovky.pdf
+
+
+konfigurace velikosti jmenovek: `freepin.tdf`
