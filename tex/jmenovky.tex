@@ -1,0 +1,33 @@
+\documentclass[a4paper,10pt]{letter}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+% aktuální kódování: utf8
+% load ticket.sty with the appropriate ticket definition
+\usepackage[freepin,crossmark]{ticket}
+
+% load misc stuff
+\usepackage{graphicx}
+
+% make your default ticket. \ticketdefault is somewhat like a background
+\renewcommand{\ticketdefault}{%
+  \put( 7, 22){\Large 2. a 3. BrNOC}
+  \put( 7,  17){\large2. -- 4. prosince 2016}
+  \put( 7,  10){Gymnázium Brno,}
+  \put( 7,  6){tř. Kpt. Jaroše, p. o.}
+}
+
+% now what do you like to put in your ticket
+\newcommand{\confpin}[3]{\ticket{%
+    \put(44,45){\makebox[0mm]{\bfseries\Huge #1}}
+    \put(44,33){\makebox[0mm]{\bfseries\huge #2}}
+    \put(50, 2){\includegraphics[width=35mm]{#3}}
+}}
+
+%% the pins for the partipiciants ... ;-)
+%% you can generate this part from a database!
+\begin{document}
+\sffamily
+
+\input{brnoc2.tex}
+
+\end{document}
