@@ -3,10 +3,10 @@
 %%
 \unitlength=1mm
 \hoffset=-10mm
-\voffset=-10mm
+\voffset=-15mm
 
-\ticketNumbers{2}{4}
+\ticketNumbers{2}{5}
 
-\ticketSize{88}{58} % in unitlength
+\ticketSize{88}{53} % in unitlength
 \ticketDistance{0}{0} %in unitlength
 

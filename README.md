@@ -1,6 +1,8 @@
 # BrNOC-jmenovky
 
-#### Proces pro vytváření jmenovek
+new - Podporuje nazev prednasky pro prednasejici.
+
+#### Proces pro vytváření jmenovek (Outdated)
 1. .csv soubor z databáze, sloupečky: jmeno; funkce
 2. upravit skript `genTex.py`
    * nazvy funkcí

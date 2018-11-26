@@ -6,7 +6,7 @@ soubor = sys.argv[1]
 jmena = []
 funkce = []
 
-pocetNaStranku = 8
+pocetNaStranku = 10
 
 slovTitul = {}
 slovObraz = {}

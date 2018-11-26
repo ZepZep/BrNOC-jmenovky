@@ -1,26 +1,37 @@
 \documentclass[a4paper,10pt]{letter}
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{roboto}
+\usepackage[T1]{fontenc}
 % aktuální kódování: utf8
 % load ticket.sty with the appropriate ticket definition
 \usepackage[freepin,crossmark]{ticket}
 
 % load misc stuff
 \usepackage{graphicx}
+\newcommand{\poop}[0]{
+    \includegraphics[height=2em]{img/poop.png}
+}
+
 
 % make your default ticket. \ticketdefault is somewhat like a background
 \renewcommand{\ticketdefault}{%
-  \put( 7, 22){\Large 2. a 3. BrNOC}
-  \put( 7,  17){\large2. -- 4. prosince 2016}
+  \put( 13.85, 21){\huge{}\textbf{3RNOC}}
+  \put( 7,  16){\large{}8.--\,9. prosince 2017}
   \put( 7,  10){Gymnázium Brno,}
   \put( 7,  6){tř. Kpt. Jaroše, p. o.}
 }
 
 % now what do you like to put in your ticket
-\newcommand{\confpin}[3]{\ticket{%
-    \put(44,45){\makebox[0mm]{\bfseries\Huge #1}}
-    \put(44,33){\makebox[0mm]{\bfseries\huge #2}}
-    \put(50, 2){\includegraphics[width=35mm]{#3}}
+\newcommand{\confpin}[4][]{\ticket{%
+    \put(44,43){\makebox[0mm]{\bfseries\Huge{}#2}}
+    \put(44,33){\makebox[0mm]{\huge{}#3}}
+    \ifthenelse{\equal{#1}{}}{}{%
+        \ifthenelse{\equal{#1}{balazik}}
+            {\put(60, 17){\parbox{7em}{\center{\poop}}}}
+            {\put(61, 17){\parbox{6.3em}{\footnotesize{}\center{#1}}}}
+    }
+    \put(50, 2){\includegraphics[width=35mm]{#4}}
 }}
 
 %% the pins for the partipiciants ... ;-)
@@ -28,6 +39,6 @@
 \begin{document}
 \sffamily
 
-\input{brnoc2.tex}
+\input{brnoc30.tex}
 
 \end{document}
